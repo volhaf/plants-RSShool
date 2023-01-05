@@ -390,3 +390,55 @@ h1 {
 .blok-text-prices{
     margin-right: 110px;
 }
+
+
+.contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    height: 490px;
+    margin-left: 110px;
+    margin-top: 50px;
+
+}
+.contacts-photo {
+    width:400px ;
+    height:500px;
+}
+/* .contacts-heading {
+    width: 195px;
+    height: 55px;
+} */
+.heading-contacts {
+    font-family: Inika-Bold;
+    font-size: 40px;
+    color: #499A18;
+    margin-top: 10px;
+}
+
+.contacts-btn {
+    margin-top: 100px;
+}
+.btn-9 {
+    width: 450px;
+    height: 50px;
+    background-color: #D6E7D2;
+    box-shadow: -3px 3px 5px #AEA1A1;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-contacts {
+    color: #717171;
+    font-family: Inter-Regular;
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.accordion-contacts {
+    margin-top: 17px;
+    margin-right: 17px;
+}
