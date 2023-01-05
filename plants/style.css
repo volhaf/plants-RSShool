@@ -5,7 +5,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    width: 100%;
+    /* width: 100%; */
     min-width: 1440px;
 
 }
@@ -34,6 +34,7 @@ html {
     padding: 0;
     background-color: #EDF2EC;
     min-width: 1440px;
+    /* width: 100%; */
 }
 
 
@@ -142,6 +143,7 @@ h1 {
 .about {
     background-color: #ffffff;
     height: 666px;
+    width: 1440px;
 }
 
 .about-section {
@@ -404,6 +406,7 @@ h1 {
 .contacts-photo {
     width:400px ;
     height:500px;
+    margin-top: -8px;
 }
 /* .contacts-heading {
     width: 195px;
@@ -441,4 +444,35 @@ h1 {
 .accordion-contacts {
     margin-top: 17px;
     margin-right: 17px;
+}
+footer {
+    width: 1440px;
+    height: 130px;
+    background-color: #ffffff;
+}
+
+.footer-wrapper {
+    width: 1220px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    padding-top: 40px;
+}
+
+.footer-year-github {
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.github-link,
+.footer-item,
+.shcool-link {
+    font-family: Inter-Regular;
+    font-size: 20px;
+    line-height: 40px;
+    color:#000000;
+    text-decoration: none;
+
 }
