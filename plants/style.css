@@ -80,3 +80,59 @@ margin-top: 10px;
 .nav-link:focus {
     color: #E06733; 
 }
+
+
+.welcome {
+    height: 532px;
+}
+
+.welcome-section {
+    width: 1220px;
+    height: 408px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    
+}
+
+.image-welcome {
+    width:448px ;
+    height: 408px;
+}
+
+.text-welcome {
+    width: 549px ;
+    height: 340px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: Inter-Bold;
+    color: #717171;
+    font-size: 45px;
+    line-height: 50px;
+}
+.green {
+    color: #499A18;
+}
+.item-welcome {
+    font-family: Inter-Regular;
+    color: #636060;
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: -15px;
+}
+
+.btn-1 {
+    width: 158px ;
+    height: 44px;
+    background-color:#EDF2EC;
+    border: solid 2px;
+    border-color: #E06733;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-transform:uppercase;
+
+
+}
