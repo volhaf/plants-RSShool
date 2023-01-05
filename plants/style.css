@@ -1,0 +1,26 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    width: 100%;
+    min-width: 1440px;
+
+}
+
+
+@font-face {
+    font-family: Inika;
+    src: url("fonts/Inika-Regular.ttf");
+   }
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url(fonts/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url(fonts/Inter-Regular.ttf);
+   }
