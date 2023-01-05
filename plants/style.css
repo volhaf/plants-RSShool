@@ -133,6 +133,47 @@ h1 {
     border-radius: 10px;
     margin-top: 20px;
     text-transform:uppercase;
+}
 
+.about {
+    background-color: #ffffff;
+    height: 666px;
+}
 
+.about-section {
+    background-color: #ffffff;
+    width: 1220px;
+    height: 480px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    padding-top: 93px;
+}
+
+.text-about {
+    width: 605px;
+    height: 348px;
+    padding-top: 65px;
+}
+
+.heading-about {
+    font-family: Inika;
+    color: #499A18;
+    font-size: 40px;
+    line-height: auto;
+    width: 463px;
+}
+
+.item-about {
+    font-family: Inter-Regular;
+    color: #636060;
+    font-size: 20px;
+    line-height: 30px;
+    width: 605px;
+    height:208px;
+}
+
+.image-about {
+    width: 464px;
+    height: 479px;
 }
