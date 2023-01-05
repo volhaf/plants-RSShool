@@ -191,7 +191,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-left: 110px;
-    margin-top: 30px;
+    margin-top: 40px;
 
 }
 
@@ -227,4 +227,50 @@ h1 {
     margin-top: 20px;
     background-color: #EDF2EC;
     color: #E06733;
+    font-family: Inter-Regular;
+    font-size: 20px;
+    line-height: auto;
+
 }
+
+
+.item-servis {
+    width:330px;
+    height:450px;
+    border: solid 1px;
+    border-color: #E3E1D5;
+    border-radius: 20px;
+   
+}
+
+.heading-photo {
+    font-family: Inter-Bold;
+    color: #E06733;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.text-photo { 
+    font-family: Inter-Regular;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+    text-align: center;
+}
+
+
+.blok-servis-photo {
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    gap: 100px;
+    margin-left: 116px;
+    margin-top: 90px;
+}
+
+.women2,
+.flowerpot,
+.cactus {
+        margin-top: -55px;
+}
+
