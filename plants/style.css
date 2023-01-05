@@ -177,3 +177,54 @@ h1 {
     width: 464px;
     height: 479px;
 }
+
+.service {
+    width:1440px;
+    height:1300px;
+    background-color: #EDF2EC;
+}
+
+
+.blok-servis-content {
+    width:1007px;
+    height:94px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-top: 30px;
+
+}
+
+.text-servis {
+    width: 306px;
+    height: 94px;
+}
+
+.heading-servis {
+    font-family: Inika;
+    color: #499A18;
+    font-size: 40px;
+    line-height: auto;
+    margin: 0;
+}
+
+.btn-servis {
+    display: flex;
+    justify-content: space-between;
+    width: 560px;
+    height: 50px;
+
+}
+
+.btn-2,
+.btn-3, 
+.btn-4 {
+    width: 161px;
+    height: 50px;
+    border: solid 1px;
+    border-color: #E06733;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #EDF2EC;
+    color: #E06733;
+}
