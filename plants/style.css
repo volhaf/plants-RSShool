@@ -6,7 +6,6 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
     /* width: 100%; */
-    min-width: 1440px;
 
 }
 
@@ -33,10 +32,12 @@ html {
     margin: 0;
     padding: 0;
     background-color: #EDF2EC;
-    min-width: 1440px;
-    /* width: 100%; */
 }
 
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+}
 
 .conteiner-header {
     width: 1440px;
