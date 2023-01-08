@@ -51,14 +51,14 @@ html {
     display: flex;
     justify-content: space-between;
     margin-top: 43px;
-    margin-left: 100px;
+    margin-left: 110px;
 }
 
 
 .conteiner-icon{
 width: 80px;
 height: 21px;
-margin-top: 10px;
+margin-top: 7px;
 }
 
 .conteiner-nav {
@@ -66,6 +66,9 @@ margin-top: 10px;
     height: 50px;
 }
 
+.navigation {
+    margin-left: -60px;
+}
 .navigation-list {
     display: flex;
     justify-content: space-between;
@@ -104,13 +107,15 @@ margin-top: 10px;
 .image-welcome {
     width:448px ;
     height: 408px;
+    margin-top: 50px;
+    margin-left: -15px;
 }
 
 .text-welcome {
     width: 549px ;
     height: 340px;
     margin-left: 10px;
-    margin-top: 20px;
+    margin-top: 62px;
 }
 
 h1 {
@@ -127,7 +132,7 @@ h1 {
     color: #636060;
     font-size: 20px;
     line-height: 35px;
-    margin-top: -15px;
+    padding-top: 5px;
 }
 
 .btn-1 {
@@ -137,8 +142,10 @@ h1 {
     border: solid 2px;
     border-color: #E06733;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
     text-transform:uppercase;
+    font-family: Inter-Regular;
+    font-size: 16px;
 }
 
 .about {
@@ -160,14 +167,13 @@ h1 {
 .text-about {
     width: 605px;
     height: 348px;
-    padding-top: 65px;
+    padding-top: 35px;
 }
 
 .heading-about {
     font-family: Inika;
     color: #499A18;
     font-size: 40px;
-    line-height: auto;
     width: 463px;
 }
 
@@ -178,6 +184,7 @@ h1 {
     line-height: 30px;
     width: 605px;
     height:208px;
+    padding-top: 5px;
 }
 
 .image-about {
@@ -211,7 +218,6 @@ h1 {
     font-family: Inika;
     color: #499A18;
     font-size: 40px;
-    line-height: auto;
     margin: 0;
 }
 
@@ -220,6 +226,7 @@ h1 {
     justify-content: space-between;
     width: 560px;
     height: 50px;
+    margin-top: 8px;
 
 }
 
@@ -230,13 +237,12 @@ h1 {
     height: 50px;
     border: solid 1px;
     border-color: #E06733;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 20px;
     background-color: #EDF2EC;
     color: #E06733;
-    font-family: Inter-Regular;
+    font-family: Inika;
     font-size: 20px;
-    line-height: auto;
 
 }
 
@@ -256,6 +262,8 @@ h1 {
     font-size: 20px;
     line-height: 20px;
     text-align: center;
+    margin-top: 5px;
+    margin-left: 2px;
 }
 
 .text-photo { 
@@ -270,14 +278,14 @@ h1 {
 .blok-servis-photo {
     display: grid;
     grid-template-columns: repeat(3, 330px);
-    gap: 100px;
-    margin-left: 116px;
+    gap: 115px;
+    margin-left: 109px;
     margin-top: 90px;
 }
 .women2,
 .flowerpot,
 .cactus {
-        margin-top: -55px;
+        margin-top: -60px;
 }
 
 
@@ -285,7 +293,8 @@ h1 {
 .prices {
     background-color: #ffffff;
     width: 1440px;
-    height: 560px;
+    height: 556px;
+    margin-top: -38px;
 }
 
 .prices-wrapper {
@@ -305,8 +314,8 @@ h1 {
     font-family: Inter-Bold;
     color: #000;
     font-size: 40px;
-    line-height: auto;
     text-align: start;
+    margin-top: 36px;
 
 }
 
@@ -321,10 +330,10 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 33px;
+    margin-top:60px;
     
 }
-
 .btn-5,
 .btn-6,
 .btn-7 {
@@ -332,11 +341,14 @@ h1 {
     height: 50px;
     border: solid 1px;
     border-color: #D9D9D9;
-    border-radius: 30px;
+    border-radius: 25px;
     background-color: #EDF2EC;
     display: flex;
     flex-direction:row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 38px;
+    padding-right: 38px;
 
     
 }
@@ -349,7 +361,7 @@ h1 {
 }
 
 .accordion-img {
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .textCallAs {
@@ -374,12 +386,12 @@ h1 {
     border: solid 1px;
     border-color: #E06733;
     color:#E06733 ;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #ffffff;
     font-family: Inika-Bold;
     font-size: 20px;
-    margin-left: 295px;
-    margin-top: 38px;
+    margin-left: 293px;
+    margin-top: 9px;
 
 }
 
@@ -387,21 +399,23 @@ h1 {
     width: 152px;
     height: 175px;
     margin-left: 295px;
-    margin-top: 60px;
+    margin-top: 38px;
 }
 
 .blok-text-prices{
     margin-right: 110px;
 }
 
-
+.contacts {
+    margin-top:5px;
+}
 .contacts-wrapper {
     display: flex;
     justify-content: space-between;
     width: 1220px;
     height: 490px;
-    margin-left: 110px;
-    margin-top: 50px;
+    margin-left: 109px;
+    margin-top: 60px;
 
 }
 .contacts-photo {
@@ -417,7 +431,8 @@ h1 {
     font-family: Inika-Bold;
     font-size: 40px;
     color: #499A18;
-    margin-top: 10px;
+    margin-top: -3px;
+    margin-left: 66px;
 }
 
 .contacts-btn {
@@ -427,10 +442,12 @@ h1 {
     width: 450px;
     height: 50px;
     background-color: #D6E7D2;
-    box-shadow: -3px 3px 5px #AEA1A1;
+    box-shadow: -2px 3px 7px  #AEA1A1;
     border: none;
     display: flex;
     justify-content: space-between;
+    padding-left: 24px;
+    padding-top: 5px;
 }
 
 .btn-contacts {
@@ -439,12 +456,12 @@ h1 {
     font-size: 20px;
     line-height: 40px;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: -13px;
 }
 
 .accordion-contacts {
-    margin-top: 17px;
-    margin-right: 17px;
+    margin-top: 12px;
+    margin-right: 26px;
 }
 footer {
     width: 1440px;
@@ -457,27 +474,58 @@ footer {
     height: 50px;
     display: flex;
     justify-content: space-between;
-    margin-left: 110px;
-    padding-top: 40px;
+    margin-left: 104px;
+    padding-top: 30px;
 }
 
 .footer-year-github {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 180px;
 }
 
 .github-link,
 .shcool-link,
-.footer-item {
+.footer-item, 
+.footer-year {
     font-family: Inter-Regular;
     font-size: 20px;
     line-height: 40px;
     color:#000000;
     text-decoration: none;
+}
+
+.footer-item {
+    margin-top: 14px;
+}
+.footer-year {
+    margin-top: 14px;
+    margin-left: 4px;
+}
+
+.github-link{
+    margin-left:10px;
+}
+
+.shcool-link {
+    margin-left: 63px;
+}
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    margin-top: 19px;
+}
+
+.social-item {
+    padding-left: 14px;
 
 }
 
+.social {
+
+
+}
 ul li {
     display:inline-block;
     padding-left: 20px;
