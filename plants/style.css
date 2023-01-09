@@ -5,28 +5,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /* width: 100%; */
 }
-
-
-@font-face {
-    font-family: Inika;
-    src: url("fonts/Inika-Regular.ttf");
-   }
-   @font-face {
-    font-family: Inika-Bold;
-    src: url("fonts/Inika-Bold.ttf");
-   }
-
-@font-face {
-    font-family: Inter-Bold;
-    src: url(fonts/Inter-Bold.ttf);
-}
-@font-face {
-    font-family: Inter-Regular;
-    src: url(fonts/Inter-Regular.ttf);
-   }
-
    body {
     margin: 0;
     padding: 0;
@@ -49,14 +28,14 @@ html {
     height: 50px;
     display: flex;
     justify-content: space-between;
-    margin-top: 43px;
+    margin-top: 36px;
     margin-left: 110px;
 }
 
 .conteiner-icon{
 width: 80px;
 height: 21px;
-margin-top: 7px;
+margin-top: 15px;
 }
 
 .conteiner-nav {
@@ -65,7 +44,7 @@ margin-top: 7px;
 }
 
 .navigation {
-    margin-left: -60px;
+    margin-left: -40px;
 }
 .navigation-list {
     display: flex;
@@ -77,8 +56,7 @@ margin-top: 7px;
 .nav-link {
     text-decoration: none;
     color: #010201; 
-    font-family: Inika;
-    font-size: 16px;
+    font: normal normal 16px/32px "inika", serif;
 }
 .orange {
     color:#E06733; 
@@ -114,17 +92,14 @@ margin-top: 7px;
 h1 {
     font-family: Inter-Bold;
     color: #717171;
-    font-size: 45px;
-    line-height: 50px;
+    font: normal bold 45px/50px "Inter", sans-serif;
 }
 .green {
     color: #499A18;
 }
 .item-welcome {
-    font-family: Inter-Regular;
+    font: normal 400 20px/35px "Inter", sans-serif;
     color: #636060;
-    font-size: 20px;
-    line-height: 35px;
     padding-top: 5px;
 }
 
@@ -137,8 +112,20 @@ h1 {
     border-radius: 10px;
     margin-top: 30px;
     text-transform:uppercase;
-    font-family: Inter-Regular;
-    font-size: 16px;
+    cursor: pointer;
+    font: normal 400 16px/20px "Inter", sans-serif;
+}
+
+.btn-1:hover,
+.btn-2:hover,
+.btn-3:hover,
+.btn-4:hover,
+.btn-8:hover {
+  border-radius: 7px;
+  background-color: #e06733;
+  color: white;
+  border-style: solid;
+  transition: 0.5s;
 }
 
 .about {
@@ -164,20 +151,17 @@ h1 {
 }
 
 .heading-about {
-    font-family: Inika;
+    font: normal 400 40px/53px "Inika", serif;
     color: #499A18;
-    font-size: 40px;
     width: 463px;
 }
 
 .item-about {
-    font-family: Inter-Regular;
+    font: normal 400 20px/30px "Inter", sans-serif;
     color: #636060;
-    font-size: 20px;
-    line-height: 30px;
     width: 605px;
     height:208px;
-    padding-top: 5px;
+    padding-top: 2px;
 }
 
 .image-about {
@@ -205,9 +189,8 @@ h1 {
     height: 94px;
 }
 .heading-servis {
-    font-family: Inika;
+    font: normal 400 40px/52px "Inika", serif;
     color: #499A18;
-    font-size: 40px;
     margin: 0;
 }
 .btn-servis {
@@ -228,8 +211,7 @@ h1 {
     margin-top: 20px;
     background-color: #EDF2EC;
     color: #E06733;
-    font-family: Inika;
-    font-size: 20px;
+    font: normal 400 20px/26px "Inika", sans-serif;
 }
 .item-servis {
     width:330px;
@@ -239,19 +221,15 @@ h1 {
     border-radius: 20px;
 }
 .heading-photo {
-    font-family: Inter-Bold;
+    font: normal bold 20px/20px "Inter", sans-serif;
     color: #E06733;
-    font-size: 20px;
-    line-height: 20px;
     text-align: center;
     margin-top: 5px;
     margin-left: 2px;
 }
 
 .text-photo { 
-    font-family: Inter-Regular;
-    font-size: 16px;
-    line-height: 20px;
+    font: normal 400 16px/20px "Inter", sans-serif;
     color: #717171;
     text-align: center;
 }
@@ -287,11 +265,10 @@ h1 {
 }
 
 .heading-prices {
-    font-family: Inter-Bold;
     color: #000;
-    font-size: 40px;
     text-align: start;
     margin-top: 36px;
+    font: normal 700 40px/48px "Inter", sans-serif;
 }
 
 .btn-prices {
@@ -328,10 +305,8 @@ h1 {
 }
 
 .btn-text {
-    font-family: Inter-Bold;
+    font: normal 700 20px/20px "Inter", serif;
     color: #000;
-    font-size: 20px;
-    line-height: 20px;
 }
 
 .textCallAs {
@@ -341,10 +316,8 @@ h1 {
 }
 
 .heading-prices-text {
-    font-family: Inter-Bold;
+    font: normal bold 40px/50px "Inter", sans-serif;
     color: #000;
-    font-size: 40px;
-    line-height: 50px;
     text-align: end;
 }
 .btn-8 {
@@ -355,8 +328,7 @@ h1 {
     color:#E06733 ;
     border-radius: 5px;
     background-color: #ffffff;
-    font-family: Inika-Bold;
-    font-size: 20px;
+    font: normal 400 20px/26px "Inika", sans-serif;
     margin-left: 293px;
     margin-top: 9px;
 }
@@ -390,8 +362,7 @@ h1 {
 }
 
 .heading-contacts {
-    font-family: Inika-Bold;
-    font-size: 40px;
+    font: normal 700 40px/52px "Inika", sans-serif;
     color: #499A18;
     margin-top: -3px;
     margin-left: 66px;
@@ -403,19 +374,16 @@ h1 {
     width: 450px;
     height: 50px;
     background-color: #D6E7D2;
-    box-shadow: -2px 3px 7px  #AEA1A1;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border: none;
     display: flex;
     justify-content: space-between;
     padding-left: 24px;
     padding-top: 5px;
 }
-
 .btn-contacts {
     color: #717171;
-    font-family: Inter-Regular;
-    font-size: 20px;
-    line-height: 40px;
+    font: normal normal 20px/45px "Inter", serif;
     margin-left: 20px;
     margin-top: -13px;
 }
@@ -426,64 +394,41 @@ h1 {
 }
 footer {
     width: 1440px;
-    height: 130px;
     background-color: #ffffff;
 }
 
-.footer-wrapper {
-    width: 1220px;
-    height: 50px;
+.footer-container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-left: 104px;
-    padding-top: 30px;
+    padding: 40px 109px;
 }
-
-.footer-year-github {
+.footer-data{
     display: flex;
-    justify-content: space-around;
-    width: 180px;
+    gap: 20px;
+    font: normal 400 20px/40px 'Inter', sans-serif;
 }
 
-.github-link,
-.shcool-link,
-.footer-item, 
-.footer-year {
-    font-family: Inter-Regular;
-    font-size: 20px;
-    line-height: 40px;
-    color:#000000;
-    text-decoration: none;
-}
+.footer-shcool{
+    font: normal 400 20px/40px 'Inter', sans-serif;
+    text-align: center;
+    padding-left: 55px;
+    margin-top: -14px;
+ }
 
-.footer-item {
-    margin-top: 14px;
-}
-.footer-year {
-    margin-top: 14px;
-    margin-left: 4px;
-}
 
-.github-link{
-    margin-left:10px;
-}
-
-.shcool-link {
-    margin-left: 63px;
-}
-.social-list {
+.social-list{
     display: flex;
-    justify-content: space-between;
-    gap: 4px;
-    margin-top: 19px;
-}
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    }
 
-.social-item {
-    padding-left: 14px;
-
-}
-
-ul li {
-    display:inline-block;
-    padding-left: 20px;
-}
+.social,
+.link {
+   text-decoration: none;
+   color: #010201;
+      }
+    
+    
