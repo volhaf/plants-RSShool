@@ -430,5 +430,11 @@ footer {
    text-decoration: none;
    color: #010201;
       }
-    
-    
+
+
+      @media (max-width: 1439px) {}
+      @media (max-width: 1120px) {}
+      @media (max-width: 768px) {}
+      @media (max-width: 520px) {}
+      @media (max-width: 380px) {}
+      @media (max-width: 320px) {}
