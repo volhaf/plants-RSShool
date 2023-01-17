@@ -1,0 +1,64 @@
+
+
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 768px;
+        margin: auto;}
+    .conteiner-header {
+        max-width: 768px;
+        height: 117px;}
+    .navbar {
+        width: 668px;
+        height: 47px;
+        /* margin-top: 36px;
+        margin-left: 110px; */}
+    .conteiner-icon{ /*почти не изменилось*/
+        width: 77px;
+        height: 21px;
+        /* margin-top: 15px; */}
+    .conteiner-nav { /*почти не изменилось*/
+        width: 452px;
+        height: 47px;}
+    .welcome {
+        max-width: 768px;
+        height: 420px;}
+    .welcome-section {
+        max-width: 668px;
+        height: 310px;
+        flex-direction: row-reverse;
+        /* margin-left: 110px; */}
+    .image-welcome {
+        max-width:280px ;
+        height: 254px;
+        /* margin-top: 50px;
+        margin-left: -15px; */}
+    .image-leafs {
+        max-width:280px ;
+        height: 254px;
+    }
+    .text-welcome {
+        max-width: 346px ;
+        height: 310px;
+        /* margin-left: 10px;
+        margin-top: 62px; */}
+    h1 {
+        font-family: Inter-Bold;
+        color: #717171;
+        font: normal bold 35px/50px "Inter", sans-serif;}
+    
+    .item-welcome {
+        font: normal 400 16px/25px "Inter", sans-serif;
+        /* padding-top: 5px; */ }
+    
+    
+    
+    
+    
+    }
+
+
+  
+  @media (max-width: 380px) {}
+  @media (max-width: 320px) {}

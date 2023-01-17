@@ -18,7 +18,7 @@ html {
 }
 
 .conteiner-header {
-    width: 1440px;
+    max-width: 1440px;
     height: 135px;
     display: flex;
 }
@@ -70,20 +70,20 @@ margin-top: 15px;
     height: 532px;
 }
 .welcome-section {
-    width: 1220px;
+    max-width: 1220px;
     height: 408px;
     display: flex;
     justify-content: space-between;
     margin-left: 110px;
 }
 .image-welcome {
-    width:448px ;
+    max-width:448px ;
     height: 408px;
     margin-top: 50px;
     margin-left: -15px;
 }
 .text-welcome {
-    width: 549px ;
+    max-width: 549px ;
     height: 340px;
     margin-left: 10px;
     margin-top: 62px;
@@ -136,7 +136,7 @@ h1 {
 
 .about-section {
     background-color: #ffffff;
-    width: 1220px;
+    max-width: 1220px;
     height: 480px;
     display: flex;
     justify-content: space-between;
@@ -145,7 +145,7 @@ h1 {
 }
 
 .text-about {
-    width: 605px;
+    max-width: 605px;
     height: 348px;
     padding-top: 35px;
 }
@@ -170,13 +170,13 @@ h1 {
 }
 
 .service {
-    width:1440px;
+    max-width:1440px;
     height:1300px;
     background-color: #EDF2EC;
 }
 
 .blok-servis-content {
-    width:1007px;
+    max-width:1007px;
     height:94px;
     display: flex;
     justify-content: space-between;
@@ -185,7 +185,7 @@ h1 {
 
 }
 .text-servis {
-    width: 306px;
+    max-width: 306px;
     height: 94px;
 }
 .heading-servis {
@@ -249,7 +249,7 @@ h1 {
 
 .prices {
     background-color: #ffffff;
-    width: 1440px;
+    max-width: 1440px;
     height: 556px;
     margin-top: -38px;
 }
@@ -259,7 +259,7 @@ h1 {
 }
 
 .blok-prices {
-    width: 332px;
+    max-width: 332px;
     height: 390px;
     margin-left: 110px;
 }
@@ -393,7 +393,7 @@ h1 {
     margin-right: 26px;
 }
 footer {
-    width: 1440px;
+    max-width: 1440px;
     background-color: #ffffff;
 }
 
@@ -432,9 +432,26 @@ footer {
       }
 
 
-      @media (max-width: 1439px) {}
-      @media (max-width: 1120px) {}
-      @media (max-width: 768px) {}
-      @media (max-width: 520px) {}
+      /* @media (max-width: 768px) {
+        .wrapper {
+            max-width: 768px;
+            margin: auto;}
+            .conteiner-header {
+                max-width: 768px;
+                height: 117px;
+                display: flex;
+            }
+            .navbar {
+                width: 1220px;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 36px;
+                margin-left: 110px;}
+
+
+
+      }
+      
       @media (max-width: 380px) {}
-      @media (max-width: 320px) {}
+      @media (max-width: 320px) {} */
