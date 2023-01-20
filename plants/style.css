@@ -296,7 +296,7 @@ h1 {
     color: #000;
     text-align: end;
 }
-.btn-8 {
+.btn-5 {
     width: 162px;
     height: 50px;
     border: solid 1px;
@@ -306,11 +306,7 @@ h1 {
     background-color: #ffffff;
     font: normal 400 20px/26px "Inika", sans-serif;
 }
-.prices-leafs {
-    width: 152px;
-    height: 175px;
-    margin-top: 20px;
-}
+
 
 .blok-text-prices{
     display: flex;
