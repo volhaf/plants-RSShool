@@ -131,11 +131,11 @@ h1 {
     gap: 13px;
     padding-top: 63px;
 }
-
 .heading-servis {
     font: normal 400 35px/45px "Inika", serif;
     margin: 0;
     }
+
 .blok-servis-photo {
     display: grid;
     grid-template-columns: repeat(2, 280px);
@@ -144,25 +144,34 @@ h1 {
     margin-top: 100px;
 
 }
-.blok-servis-photo>div>img {
+
+.card-text p {
+    padding: 0 38px 0 38px;
+    margin-top: 10px;
+}
+
+.item-servis{
     width: 280px;
-    height: 350px;
+    margin-right: 20px;
 }
-.blok-servis-photo>div {
-    width: 281px;
-    height:450px;
+.item-servis:nth-child(1) > .servis-img {
+    background-image: url("./images/servis1tab.png");
 }
-.heading-photo {
-    margin-top: 2px;
-    margin-left: 2px;
-}
-
-.text-photo { 
-    margin-left: auto;
-    margin-right: auto;
-    width: 201px;
-}
-
+  .item-servis:nth-child(2) > .servis-img {
+    background-image: url("./images/servis2tab.png");
+  }
+  .item-servis:nth-child(3) > .servis-img {
+    background-image: url("./images/servis3tab.png");
+  }
+  .item-servis:nth-child(4) > .servis-img{
+    background-image: url("./images/servis4tab.png");
+  }
+  .item-servis:nth-child(5) > .servis-img{
+    background-image: url("./images/servis5tab.png");
+  }
+  .item-servis:nth-child(6) > .servis-img {
+    background-image: url("./images/servis6tab.png");
+  }
 
 /* секция prices  */
 
