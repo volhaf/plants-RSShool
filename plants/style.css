@@ -24,6 +24,9 @@ html {
     padding-left: 109px;
     padding-right: 109px;
 }
+.burger-menu {
+    display: none;
+}
 
 .conteiner-header {
     margin: auto;
@@ -172,7 +175,8 @@ h1 {
 }
 
 .blok-servis-content {
-    max-width:1007px;
+    /* max-width:1007px; */
+    width:1007px;
     height:94px;
     display: flex;
     justify-content: space-between;
@@ -180,7 +184,8 @@ h1 {
 
 }
 .text-servis {
-    max-width: 306px;
+    /* max-width: 306px; */
+    width: 306px;
     height: 94px;
 }
 .heading-servis {
@@ -247,7 +252,8 @@ h1 {
 }
 
 .blok-prices {
-    max-width: 332px;
+    /* max-width: 332px; */
+    width: 332px;
     height: 390px;
     display: flex;
     justify-content: space-between;

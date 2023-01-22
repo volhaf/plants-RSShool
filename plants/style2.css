@@ -147,8 +147,6 @@ h1 {
 .blok-servis-photo>div>img {
     width: 280px;
     height: 350px;
-    object-fit: cover;
-    object-position: 0 0;
 }
 .blok-servis-photo>div {
     width: 281px;
@@ -266,5 +264,3 @@ h1 {
     }
     
 }
-  @media (max-width: 380px) {}
-  @media (max-width: 320px) {}
