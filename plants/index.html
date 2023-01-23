@@ -13,21 +13,25 @@
     <link rel="shortcut icon" type="image/svg" href="images/favicon.svg">
 </head>
 <body>
-<div class="wrapper">
-    <header>
-        <div class="conteiner-header">
+    <header class="header">
+        <div class="conteiner-header conteiner">
             <div class="navbar">
                 <div class="conteiner-icon">
                     <img src="./images/logo.png" alt="logo">
                 </div>
+                <button class="burger-menu close">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
                 <div class="conteiner-nav">
                     <nav class="navigation">
                         <ul class="navigation-list">
-                            <li><a href="#home-anchor" class="nav-link orange">Home</a></li>
-                            <li><a href="#about-anchor" class="nav-link">About us</a></li>
-                            <li><a href="#service-anchor" class="nav-link">Service</a></li>
-                            <li><a href="#price-anchor" class="nav-link">Price</a></li>
-                            <li><a href="#contacts-anchor" class="nav-link">Contacts</a></li>
+                            <li><a href="#home-anchor" class="nav-link orange close">Home</a></li>
+                            <li><a href="#about-anchor" class="nav-link close">About us</a></li>
+                            <li><a href="#service-anchor" class="nav-link close">Service</a></li>
+                            <li><a href="#price-anchor" class="nav-link close">Price</a></li>
+                            <li><a href="#contacts-anchor" class="nav-link close">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -36,9 +40,9 @@
     </header>
     <main>
         <section class="welcome">
-            <div class="welcome-section">
+            <div class="welcome-section conteiner" >
                 <div class="image-welcome">
-                    <img src="./images/leafs.png" alt="leafs">
+                    <img src="./images/leafs.png" alt="leafs" class="image-leafs">
                 </div>
                 <div class="text-welcome">
                     <h1> We grow <span class="green"> plants </span> and give you oxygen </h1>
@@ -52,7 +56,7 @@
             </div>
         </section>
         <section class="about" id="about-anchor">
-            <div class="about-section">
+            <div class="about-section  conteiner">
                 <div class="text-about">
                     <h2 class="heading-about">We are <span class="orange">professional experienced</span> gardeners</h2>
                     <h3 class="item-about"> Lorem Ipsum is simply dummy text of the printing and 
@@ -62,92 +66,107 @@
                          but also the leap into electronic typesetting, remaining essentially unchanged. </h3>
                 </div>
                 <div class="image-about">
-                    <img src="./images/houseplant.png" alt="houseplant">
+                    <img src="./images/houseplant.png" alt="houseplant" class="image-houseplant">
                 </div>
             </div>
         </section>
         <section class="service" id="service-anchor">
-            <div class="blok-servis-content">
-                <div class="text-servis">
-                    <h2 class="heading-servis">Service and our projects</h2>
+            <div class = conteiner>
+                <div class="blok-servis-content">
+                    <div class="text-servis">
+                        <h2 class="heading-servis">Service and our projects</h2>
+                    </div>
+                    <div class="btn-servis">
+                        <button class="btn-2">Gardens</button>
+                        <button class="btn-3">Lawn</button>
+                        <button class="btn-4">Planting</button>
+                    </div>
                 </div>
-                <div class="btn-servis">
-                    <button class="btn-2">Gardens</button>
-                    <button class="btn-3">Lawn</button>
-                    <button class="btn-4">Planting</button>
+
+                <div class="blok-servis-photo">
+                    <div class="item-servis women1">
+                        <div class="servis-img"></div>
+                        <div class="card-text">
+                            <h3 class="heading-photo">Garden care</h3>
+                            <p>Lorem Ipsum has been the industry</p>
+                          </div>
+                    </div>
+                    <div class="item-servis lemon">
+                        <div class="servis-img"></div>
+                        <div class="card-text">
+                            <h3 class="heading-photo">Planting</h3>
+                            <p>Lorem Ipsum has been the industry</p>
+                          </div>
+                    </div>
+                    <div class="item-servis spray">
+                        <div class="servis-img"></div>
+                        <div class="card-text">
+                            <h3 class="heading-photo">Lawn care</h3>
+                            <p>Lorem Ipsum has been the industry</p>
+                          </div>
+                    </div>
+                    <div class="item-servis women2">
+                        <div class="servis-img"></div>
+                        <div class="card-text">
+                            <h3 class="heading-photo">Planting</h3>
+                            <p>Lorem Ipsum has been the industry</p>
+                          </div>
+                    </div>
+                    <div class="item-servis flowerpot">
+                        <div class="servis-img"></div>
+                        <div class="card-text">
+                            <h3 class="heading-photo">Garden care</h3>
+                            <p>Lorem Ipsum has been the industry</p>
+                          </div>
+                    </div>
+                    <div class="item-servis cactus">
+                        <div class="servis-img"></div>
+                        <div class="card-text">
+                            <h3 class="heading-photo">Planting</h3>
+                            <p>Lorem Ipsum has been the industry</p>
+                          </div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="blok-servis-photo">
-                <div class="item-servis women1">
-                    <img src="./images/women1.png" alt="women1">
-                    <h2 class="heading-photo"> Garden care</h2>
-                    <h3 class="text-photo">Lorem Ipsum has been the industry</h3>
-                </div>
-                <div class="item-servis lemon">
-                    <img src="./images/lemon.png" alt="lemon">
-                    <h2 class="heading-photo"> Planting</h2>
-                    <h3 class="text-photo">Lorem Ipsum has been the industry</h3>
-                </div>
-                <div class="item-servis spray">
-                    <img src="./images/spray.png" alt="spray">
-                    <h2 class="heading-photo"> Lawn care</h2>
-                    <h3 class="text-photo">Lorem Ipsum has been the industry</h3>
-                </div>
-                <div class="item-servis women2">
-                    <img src="./images/women2.png" alt="women2">
-                    <h2 class="heading-photo"> Planting</h2>
-                    <h3 class="text-photo">Lorem Ipsum has been the industry</h3>
-                </div>
-                <div class="item-servis flowerpot">
-                    <img src="./images/flowerpot.png" alt="flowerpot">
-                    <h2 class="heading-photo"> Garden care</h2>
-                    <h3 class="text-photo">Lorem Ipsum has been the industry</h3>
-                </div>
-                <div class="item-servis cactus">
-                    <img src="./images/cactus.png" alt="cactus">
-                    <h2 class="heading-photo"> Planting</h2>
-                    <h3 class="text-photo">Lorem Ipsum has been the industry</h3>
-                </div>
-            </div>
         </section>
         <section class="prices" id="price-anchor">
-            <div class="prices-wrapper">
+            <div class="prices-wrapper conteiner">
                 <div class="blok-prices">
                     <h2 class="heading-prices">Prices</h2>
-                    <form class="btn-prices">
-                        <button class="btn-5 btn-text">Basics<img src="./images/accordion_btn.svg" alt="accordion" class="accordion-img"></button>
-                        <button class="btn-6 btn-text">Standard<img src="./images/accordion_btn.svg" alt="accordion" class="accordion-img"></button>
-                        <button class="btn-7 btn-text"> Pro care <img src="./images/accordion_btn.svg" alt="accordion" class="accordion-img"></button>
-                    </form>
+                    <div class="prices-item">
+                        <div class="btn-prices">
+                            <select class="price-select">
+                                <option class="option-prices">Basics</option>
+                            </select>
+                            <select class="price-select">
+                                <option class="option-prices">Standard</option>
+                            </select>
+                            <select class="price-select">
+                                <option class="option-prices">Pro care</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
                 <div class="blok-text-prices">
-                    <div class="textCallAs">
                         <h2 class="heading-prices-text"> Our best <span class="green">gardeners</span> are ready to help you</h2>
-                        <button class="btn-8">Contact us</button>
-                    </div>
-                    <div class="prices-leafs">
-                        <img src="./images/leafs2.png" alt="leafs2">
-                    </div>
+                        <button class="btn-5">Contact us</button>
+                        <img src="./images/leafs2.png" alt="leafs2" class="prices-leafs">
                 </div>
             </div>
         </section>
         <section class="contacts" id="contacts-anchor">
-            <div class="contacts-wrapper">
+            <div class="contacts-wrapper conteiner">
                 <div class="contacts-photo">
                     <img src="./images/contact_woman.png" alt="contact-woman">
                 </div>
-                <div class="contacts-heading">
                     <h2 class="heading-contacts">Contact us</h2>
-                </div>
-                <form class="contacts-btn">
-                    <button class="btn-9 btn-contacts">City<img src="./images/accordion_btn2.svg" alt="accordion" class="accordion-contacts"></button>
-                </form>
+                <select class="select-city">
+                    <option class="option-city">City</option>
+                </select>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-container">
+    <footer class="footer">
+        <div class="footer-container conteiner">
             <div class="footer-data">
                 <span>&copy;</span><span>2022</span><span><a href="https://github.com/volhaf" target="_blank" class="link">github</a></span>
             </div>
@@ -170,7 +189,6 @@
                 </ul>
         </div>
     </footer>
-</div>
 <script src="index.js"></script>
 </body>
 </html>
