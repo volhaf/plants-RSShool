@@ -41,7 +41,6 @@ html {
     height: 2px;
     background-color: #717171;
     transition: all 0.5s;
-    margin-top: 15px;
 }
 
 .conteiner-header {
@@ -434,7 +433,7 @@ footer {
    color: #010201;
       }
 
-      
+
     @media (max-width: 1390px) {
     .conteiner {
         max-width: 768px;
@@ -513,7 +512,7 @@ footer {
     }
     .text-about {
         height: 350px;
-        padding-top: 18px;
+        padding-top: 13px;
         max-width: inherit;
     }
     .heading-about {
@@ -528,7 +527,7 @@ footer {
         font: normal 400 20px/30px "Inter", sans-serif;
         color: #636060;
         height:208px;
-        padding-top: 2px;
+        padding-top: 9px;
         width: inherit;
     }
     .image-about {
@@ -627,7 +626,6 @@ footer {
         margin-top: 14px;
     }
     
-    
     /* секция contact */
     
     .contacts {
@@ -711,6 +709,15 @@ footer {
     .conteiner-nav {
         display: none;
     }
+    .conteiner-icon {
+        width: 80px;
+        height: 21px;
+        margin-top: 0px;
+    }
+    .navbar {
+        margin-top: 26px;
+        align-items: center;
+    }
     .burger-menu {
         opacity: 1;
         z-index: 2;
@@ -738,7 +745,7 @@ footer {
         max-width: 330px ;
         height: 252px;
         margin-left: inherit;
-        margin-top: inherit;
+        margin-top: 6px;
     }
     h1 {
         font: normal bold 25px/35px "Inter", sans-serif;
@@ -765,7 +772,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding-top: 0px;
+    padding-top: 9px;
     align-items: center;
     gap: 20px;
     }
@@ -807,7 +814,7 @@ footer {
         flex-direction: column;
         margin-left: 0px;
         margin-top: 0; 
-        gap: 13px;
+        gap: 19px;
         padding-top: 0px;
     }
     .heading-servis {
@@ -817,7 +824,7 @@ footer {
     .text-servis {
         width: 187px;
         height: 69px;
-        margin-top: 26px;
+        margin-top: 34px;
     }
 
     .btn-servis {
@@ -840,6 +847,10 @@ footer {
         background-color: #EDF2EC;
         color: #E06733;
         font: normal 400 15px/19px "Inika", sans-serif;
+    }
+    .btn-4 {
+        margin-top: 10px;
+
     }
     .blok-servis-photo {
         display: grid;
@@ -943,7 +954,7 @@ footer {
         width: 300px;
         height: 50px;
         padding: 0 20px;
-        margin-top: 0px;
+        margin-top: -70px;
         font: normal normal 20px/40px "Inter", serif;
     }
 
