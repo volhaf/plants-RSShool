@@ -26,7 +26,7 @@ html {
 }
 .burger-menu {
     /* display: none; */
-    width: 40px;
+    width: 35px;
     height: 24px;
     position: relative;
     opacity: 0;
@@ -41,7 +41,10 @@ html {
     height: 2px;
     background-color: #717171;
     transition: all 0.5s;
+    display: block;
+    transition: all 0.3s ease-in-out;
 }
+
 
 .conteiner-header {
     margin: auto;
@@ -64,15 +67,17 @@ height: 21px;
 margin-top: 15px;
 }
 
-.conteiner-nav {
+/* убираю.conteiner-nav {
+    width: 452px;
+    height: 50px;
+} */
+
+.navigation {
     width: 452px;
     height: 50px;
 }
-
-.navigation {
-    margin-left: -40px;
-}
 .navigation-list {
+    margin-left: -40px;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -706,9 +711,71 @@ footer {
     .conteiner-header {
         height: 96px;
     }
-    .conteiner-nav {
-        display: none;
+
+   /*бургер*/ 
+    
+
+    .navigation.navigation-hidden {
+        transform: translateX(200%);
     }
+
+    .navigation {
+        transform: translateX(90%);
+        transition: .1s all linear;
+        z-index: 10;
+        margin-top: 0px;
+        height: 100%;
+        width: 53%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: #EDF2EC; 
+        border-left: 2px solid #717171;
+    }
+    .navigation-list {
+    /* display: block; */
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 30px;
+        padding-top: 80px;
+        
+    }
+    .nav-link {
+        text-decoration: none;
+        color: #717171;
+        font: normal normal 25px/32px "inika", serif;
+        padding-right: 30px;
+    }
+
+    #navBurgerClose {
+        z-index: 11;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 30px;
+        right: 20px;
+    }
+
+    .close-line {
+        display: block;
+        position: absolute;
+        /* width: 100%; */
+        width: 30px;
+        height: 2px;
+        background-color:#717171;
+        top: 50%; 
+    }
+    .close-line:first-child {
+            transform: translateY(-50%) rotate(45deg);}
+    .close-line:last-child {
+            transform: translateY(-50%) rotate(-45deg);}
+
+
+
+
+
     .conteiner-icon {
         width: 80px;
         height: 21px;
@@ -720,7 +787,7 @@ footer {
     }
     .burger-menu {
         opacity: 1;
-        z-index: 2;
+        /* z-index: 2; */
         overflow: hidden;
         cursor: pointer;
     }
