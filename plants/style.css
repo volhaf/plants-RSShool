@@ -25,8 +25,7 @@ html {
     padding-right: 109px;
 }
 .burger-menu {
-    /* display: none; */
-    width: 35px;
+    width: 40px;
     height: 24px;
     position: relative;
     opacity: 0;
@@ -66,12 +65,6 @@ width: 80px;
 height: 21px;
 margin-top: 15px;
 }
-
-/* убираю.conteiner-nav {
-    width: 452px;
-    height: 50px;
-} */
-
 .navigation {
     width: 452px;
     height: 50px;
@@ -94,11 +87,9 @@ margin-top: 15px;
 .nav-link:focus {
     color: #E06733; 
 }
-
 .welcome {
     height: 532px;
 }
-
 .welcome-section {
     height: 408px;
     display: flex;
@@ -195,7 +186,6 @@ h1 {
 }
 
 .blok-servis-content {
-    /* max-width:1007px; */
     width:1007px;
     height:94px;
     display: flex;
@@ -204,7 +194,6 @@ h1 {
 
 }
 .text-servis {
-    /* max-width: 306px; */
     width: 306px;
     height: 94px;
 }
@@ -268,7 +257,6 @@ h1 {
     width: 329px;
     height: 350px;
 }
-
 .card-text {
     width: 100%;
     height: 100px;
@@ -277,14 +265,11 @@ h1 {
     border-radius: 0px 0px 20px 20px;
     border-top: none;
 }
-
 .card-text p {
     font: normal 400 16px/20px "Inter", sans-serif;
     color: #717171;
     text-align: center;
 }
-
-
 .heading-photo {
     font: normal bold 20px/20px "Inter", sans-serif;
     color: #E06733;
@@ -292,7 +277,6 @@ h1 {
     margin: 0px;
     padding-top: 8px;
 }
-
 .prices {
     background-color: #ffffff;
     height: 556px;
@@ -302,9 +286,7 @@ h1 {
     justify-content: space-between;
     gap: 436px;
 }
-
 .blok-prices {
-    /* max-width: 332px; */
     width: 332px;
     height: 390px;
     display: flex;
@@ -359,15 +341,12 @@ h1 {
     background-color: #ffffff;
     font: normal 400 20px/26px "Inika", sans-serif;
 }
-
-
 .blok-text-prices{
     display: flex;
     flex-direction: column;
     gap: 12px;
     align-items: flex-end;
 }
-
 .contacts {
     margin-top:5px;
 }
@@ -375,13 +354,11 @@ h1 {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
-
 }
 .contacts-photo {
     width:400px ;
     height:500px;
 }
-
 .heading-contacts {
     font: normal 700 40px/52px "Inika", sans-serif;
     color: #499A18;
@@ -430,8 +407,7 @@ footer {
     gap: 20px;
     align-items: center;
     margin-top: 6px;
-    }
-    
+    }   
 .social,
 .link {
    text-decoration: none;
@@ -711,17 +687,12 @@ footer {
     .conteiner-header {
         height: 96px;
     }
-
-   /*бургер*/ 
-    
-
     .navigation.navigation-hidden {
         transform: translateX(200%);
     }
-
     .navigation {
         transform: translateX(90%);
-        transition: .1s all linear;
+        transition: .3s all linear;
         z-index: 10;
         margin-top: 0px;
         height: 100%;
@@ -733,7 +704,6 @@ footer {
         border-left: 2px solid #717171;
     }
     .navigation-list {
-    /* display: block; */
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -761,7 +731,6 @@ footer {
     .close-line {
         display: block;
         position: absolute;
-        /* width: 100%; */
         width: 30px;
         height: 2px;
         background-color:#717171;
@@ -771,10 +740,6 @@ footer {
             transform: translateY(-50%) rotate(45deg);}
     .close-line:last-child {
             transform: translateY(-50%) rotate(-45deg);}
-
-
-
-
 
     .conteiner-icon {
         width: 80px;
@@ -787,11 +752,9 @@ footer {
     }
     .burger-menu {
         opacity: 1;
-        /* z-index: 2; */
         overflow: hidden;
         cursor: pointer;
     }
-
 /* секция welcome  */
     .welcome {
         height: 300px;
@@ -823,7 +786,7 @@ footer {
         padding-left: inherit;
     }
     .btn-1 {
-        margin-top: 17px;
+        margin-top: 13px;
         width: 100px ;
         height: 34px;
         font: normal 400 10px/20px "Inter", sans-serif;
@@ -954,7 +917,7 @@ footer {
         height: 50px; 
     }
     .blok-prices {
-        gap: 15px; /*проверить*/
+        gap: 15px;
         height: 305px;
     }
     .heading-prices {
@@ -999,7 +962,7 @@ footer {
     .select-city {
         order: 2;
         background-position: center right 22px;
-        margin-top: -65px; /*подумать*/
+        margin-top: -65px;
     }
     .contacts-photo {
         order: 3;
@@ -1054,7 +1017,6 @@ footer {
         list-style: none;
         gap: 20px;
         align-items: center;
-        margin-left: -40px; /* подумать*/
+        margin-left: -40px;
         }
-        
 }
