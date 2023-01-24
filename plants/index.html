@@ -19,14 +19,13 @@
                 <div class="conteiner-icon">
                     <img src="./images/logo.png" alt="logo">
                 </div>
-                <button class="burger-menu">
+                <button id="burgerBtn" class="burger-menu">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
                 </button>
-                <div class="conteiner-nav">
-                    <nav class="navigation">
+                    <nav id="navigationMenu" class="navigation navigation-hidden">
                         <ul class="navigation-list">
                             <li><a href="#home-anchor" class="nav-link orange">Home</a></li>
                             <li><a href="#about-anchor" class="nav-link">About us</a></li>
@@ -34,8 +33,11 @@
                             <li><a href="#price-anchor" class="nav-link">Price</a></li>
                             <li><a href="#contacts-anchor" class="nav-link">Contacts</a></li>
                         </ul>
+                        <div id="navBurgerClose">
+                            <span class="close-line"></span>
+                            <span class="close-line"></span>
+                        </div>
                     </nav>
-                </div>
             </div>
         </div>
     </header>
