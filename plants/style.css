@@ -271,12 +271,24 @@ h1 {
     text-align: center;
 }
 .heading-photo {
-    font: normal bold 20px/20px "Inter", sans-serif;
+    font: bold 20px/20px "Inter", sans-serif;
     color: #E06733;
     text-align: center;
     margin: 0px;
     padding-top: 8px;
 }
+
+.blur {
+    filter: blur(3px);
+    transition-duration: .3s;
+}
+
+.blurOff {
+    filter: blur(0px);
+    animation: blur .5s;
+}
+
+/* секция prices  */
 .prices {
     background-color: #ffffff;
     height: 556px;
@@ -300,7 +312,7 @@ h1 {
     margin-top: 36px;
     font: normal 700 40px/48px "Inter", sans-serif;
 }
-.btn-prices {
+/* .btn-prices {
     width: 332px;
     height: 282px;
     border: solid 1px;
@@ -324,6 +336,71 @@ h1 {
     background-image: url(./images/accordion_btn.svg);
     background-repeat: no-repeat;
     background-position: center right 40px;
+} */
+
+.btn-prices {
+    width: 332px;
+    height: 282px;
+    border: solid 1px;
+    border-color: #D9D9D9;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.accordion-button {
+    border: 0px;
+    border-radius: 20px;
+    font: normal 700 20px/20px "Inter", serif;
+    padding: 16px 40px;
+    text-align: left;
+    width: 250px;
+    appearance: none;
+    background-color: #edf2ec;
+    background-image: url(./images/accordion_btn.svg);
+    background-repeat: no-repeat;
+    background-position: center right 40px;
+}
+
+.price-text-open {
+    width: 172px;
+    margin-left: 40px;
+}
+.accordion-item {
+    width: 250px;
+    height: 154px;
+    background-color: #D6E7D2;
+    border-radius: 20px;
+    letter-spacing: 0.015em;
+    margin-left: 40px;
+}
+
+.accordion-text {
+    font: normal 9px/10px "Inter", serif;
+    letter-spacing: 0.05em;
+    color: #717171;
+    margin: -9px 0px;
+}
+.cost {
+    font: normal 12px/10px "Inter", serif;
+    color: #010201;
+    margin: 9px 0px;
+}
+
+.cost span {
+    font: bold 15px/20px "Inter", serif;
+    color: #E06733;
+    padding: 0; 
+}
+
+.btn-order {
+    width: 86px;
+    height: 25px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font: normal 14px/20px "Inter", serif;
+    color: #717171;
+    border: none;
+    align-items: center;
 }
 
 .heading-prices-text {
@@ -347,6 +424,11 @@ h1 {
     gap: 12px;
     align-items: flex-end;
 }
+
+
+
+/* секция contacts  */
+
 .contacts {
     margin-top:5px;
 }
@@ -380,6 +462,58 @@ h1 {
     background-repeat: no-repeat;
     background-position: center right 35px;
 }
+.select-city-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.address {
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+    padding: 25px 33px 28px 30px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+
+.table_address{
+    padding: 15px 40px 5px 33px;
+    margin-left: -30px;
+    width: 100%;
+}
+
+
+td {
+    font: normal 16px/28px "Inter", serif;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+}
+td:nth-of-type(2n-1) {
+    color: #000000;
+    width: 129px;
+}
+td:nth-of-type(2n) {
+    color: #717171;
+}
+.btn_call {
+    width: 122px;
+    height: 26px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    font: normal 700 10px/13px "Inika", sans-serif;
+    align-self: center;
+    margin-top: 10px;
+}
+.call {
+    text-decoration: none;
+    color: #717171;
+    cursor: pointer;
+    text-align: center;
+   
+}
+/* секция footer  */
 footer {
     background-color: #ffffff;
 }

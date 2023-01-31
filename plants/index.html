@@ -87,42 +87,42 @@
                 </div>
 
                 <div class="blok-servis-photo">
-                    <div class="item-servis women1">
+                    <div class="item-servis women1 blur blurOff">
                         <div class="servis-img"></div>
                         <div class="card-text">
                             <h3 class="heading-photo">Garden care</h3>
                             <p>Lorem Ipsum has been the industry</p>
                         </div>
                     </div>
-                    <div class="item-servis lemon">
+                    <div class="item-servis lemon blur ">
                         <div class="servis-img"></div>
                         <div class="card-text">
                             <h3 class="heading-photo">Planting</h3>
                             <p>Lorem Ipsum has been the industry</p>
                           </div>
                     </div>
-                    <div class="item-servis spray">
+                    <div class="item-servis spray blur blurOff">
                         <div class="servis-img"></div>
                         <div class="card-text">
                             <h3 class="heading-photo">Lawn care</h3>
                             <p>Lorem Ipsum has been the industry</p>
                           </div>
                     </div>
-                    <div class="item-servis women2">
+                    <div class="item-servis women2 blur blurOff">
                         <div class="servis-img"></div>
                         <div class="card-text">
                             <h3 class="heading-photo">Planting</h3>
                             <p>Lorem Ipsum has been the industry</p>
                           </div>
                     </div>
-                    <div class="item-servis flowerpot">
+                    <div class="item-servis flowerpot blur blurOff">
                         <div class="servis-img"></div>
                         <div class="card-text">
                             <h3 class="heading-photo">Garden care</h3>
                             <p>Lorem Ipsum has been the industry</p>
                           </div>
                     </div>
-                    <div class="item-servis cactus">
+                    <div class="item-servis cactus blur blurOff">
                         <div class="servis-img"></div>
                         <div class="card-text">
                             <h3 class="heading-photo">Planting</h3>
@@ -136,8 +136,47 @@
             <div class="prices-wrapper conteiner">
                 <div class="blok-prices">
                     <h2 class="heading-prices">Prices</h2>
-                    <div class="prices-item">
-                        <div class="btn-prices">
+                        <div class="btn-prices accordion">
+                            <div class="accordion-item">
+                                <h3 class="prices-list">
+                                    <button class="accordion-button arrow" type="button">Basics"</button>
+                                </h3>
+                                <div class="price-text-closed price-text-open">
+                                    <p class="accordion-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="cost"><span>$15</span>"  / per hour"</p>
+                                    <button class="btn-order">Order</button>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="prices-list">
+                                    <button class="accordion-button arrow" type="button">Standard</button>
+                                </h3>
+                                <div class="price-text-closed price-text-open">
+                                    <p class="accordion-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="cost"><span>$25</span>"  / per hour"</p>
+                                    <button class="btn-order">Order</button>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="prices-list">
+                                    <button class="accordion-button arrow" type="button">Pro care</button>
+                                </h3>
+                                <div class="price-text-closed price-text-open">
+                                    <p class= "accordion-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="cost"><span>$35</span>"  / per hour"</p>
+                                    <button class="btn-order">Order</button>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+                        <!-- <div class="btn-prices">
                             <select class="price-select">
                                 <option class="option-prices">Basics</option>
                             </select>
@@ -147,8 +186,7 @@
                             <select class="price-select">
                                 <option class="option-prices">Pro care</option>
                             </select>
-                        </div>
-                    </div>
+                        </div> -->
                 </div>
                 <div class="blok-text-prices">
                         <h2 class="heading-prices-text"> Our best <span class="green">gardeners</span> are ready to help you</h2>
@@ -163,9 +201,35 @@
                     <img src="./images/contact_woman.png" alt="contact-woman">
                 </div>
                     <h2 class="heading-contacts">Contact us</h2>
-                <select class="select-city">
-                    <option class="option-city">City</option>
-                </select>
+                    <div class="select-city-container">
+                        <select class="select-city">
+                            <option class="option-city">City</option>
+                            <option class="option-city" id="canandaigua">Canandaigua, NY</option>
+                            <option class="option-city" id="newyork">New York City</option>
+                            <option class="option-city" id="yonkers">Yonkers, NY</option>
+                            <option class="option-city" id="sherrill">Sherrill, NY</option>
+                            </option>
+                        </select>
+                        <div class="address">
+                            <table class="table_address">
+                                <tr>
+                                    <td>City:</td>
+                                    <td>Canandaigua, NY</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone:</td>
+                                    <td>+1	585	393 0001</td>
+                                </tr>
+                                <tr>
+                                    <td>Office adress:</td>
+                                    <td>Canandaigua, NY</td>
+                                </tr>
+                            </table>
+                            <button class="btn_call"> 
+                                <a class="call" href="tel:+1	585	393 0001">Call us</a>
+                            </button>
+                        </div>
+                    </div>
             </div>
         </section>
     </main>
