@@ -136,7 +136,7 @@ h1 {
     font: normal 400 16px/20px "Inter", sans-serif;
 }
 
-.btn-1:hover,
+/* .btn-1:hover,
 .btn-2:hover,
 .btn-3:hover,
 .btn-4:hover,
@@ -146,7 +146,16 @@ h1 {
   color: white;
   border-style: solid;
   transition: 0.5s;
+} */
+
+.btn-1:hover {
+  border-radius: 7px;
+  background-color: #e06733;
+  color: white;
+  border-style: solid;
+  transition: 0.5s;
 }
+
 .about {
     background-color: #ffffff;
     height: 666px;
@@ -209,19 +218,27 @@ h1 {
     height: 50px;
     margin-top: 8px;
 }
-.btn-2,
-.btn-3, 
-.btn-4 {
+.button-item {
     width: 161px;
     height: 50px;
     border: solid 1px;
     border-color: #E06733;
     border-radius: 5px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     background-color: #EDF2EC;
     color: #E06733;
     font: normal 400 20px/26px "Inika", sans-serif;
 }
+
+.button-item:hover {
+  border-radius: 7px;
+  background-color: #edad92;
+  color: white;
+  border-style: solid;
+  transition: 0.5s;}
+
+
+
 .blok-servis-photo {
     display: grid;
     grid-template-columns: repeat(3, 330px);
@@ -408,7 +425,7 @@ h1 {
     color: #000;
     text-align: end;
 }
-.btn-5 {
+.button-item {
     width: 162px;
     height: 50px;
     border: solid 1px;
@@ -1074,7 +1091,7 @@ footer {
     .prices-leafs {
         display: none;
     }
-    .btn-5 {
+    .button-contacts {
         width: 121px;
         height: 35px;
         font: normal 400 15px/20px "Inika", sans-serif;
