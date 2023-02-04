@@ -224,20 +224,17 @@ h1 {
     border: solid 1px;
     border-color: #E06733;
     border-radius: 5px;
-    /* margin-top: 20px; */
-    background-color: #EDF2EC;
+    cursor: pointer;
+    background-color: #ffffff;
     color: #E06733;
     font: normal 400 20px/26px "Inika", sans-serif;
 }
 
-.button-item:hover {
-  border-radius: 7px;
-  background-color: #edad92;
-  color: white;
-  border-style: solid;
-  transition: 0.5s;}
-
-
+.button-active {
+    background-color: #E06733;
+    color: white;
+    transition: 0.3s;
+}
 
 .blok-servis-photo {
     display: grid;
@@ -300,11 +297,6 @@ h1 {
     transition-duration: .3s;
 }
 
-.blurOff {
-    filter: blur(0px);
-    animation: blur .5s;
-}
-
 /* секция prices  */
 .prices {
     background-color: #ffffff;
@@ -355,15 +347,21 @@ h1 {
     background-position: center right 40px;
 } */
 
-.btn-prices {
+/* .btn-prices {
     width: 332px;
     height: 282px;
     border: solid 1px;
     border-color: #D9D9D9;
     border-radius: 20px;
     background-color: #ffffff;
-}
+} */
 
+.btn-prices{
+    margin-top: 60px;
+    padding: 1px 40px 33px 41px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+}
 .accordion-button {
     border: 0px;
     border-radius: 20px;
@@ -388,7 +386,6 @@ h1 {
     background-color: #D6E7D2;
     border-radius: 20px;
     letter-spacing: 0.015em;
-    margin-left: 40px;
 }
 
 .accordion-text {
@@ -424,16 +421,6 @@ h1 {
     font: normal bold 40px/50px "Inter", sans-serif;
     color: #000;
     text-align: end;
-}
-.button-item {
-    width: 162px;
-    height: 50px;
-    border: solid 1px;
-    border-color: #E06733;
-    color:#E06733 ;
-    border-radius: 5px;
-    background-color: #ffffff;
-    font: normal 400 20px/26px "Inika", sans-serif;
 }
 .blok-text-prices{
     display: flex;
