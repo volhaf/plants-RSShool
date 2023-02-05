@@ -466,6 +466,10 @@ h1 {
     background-repeat: no-repeat;
     background-position: center right 35px;
 }
+.select-city.active {
+    background-color: #C1E698;
+    box-shadow: none;
+}
 .select-city-container {
     display: flex;
     flex-direction: column;
@@ -473,19 +477,20 @@ h1 {
     
 }
 
-.select-city-container .address {
+/* .select-city-container .address {
     display: none;
-}
-
+} */
 
 .address {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    display: none;
     width: 448px;
     padding: 25px 33px 28px 30px;
     border: 1px solid #000;
     border-radius: 20px;
     margin-bottom: 80px;
+
 }
 
 .table_address{
@@ -493,8 +498,9 @@ h1 {
     margin-left: -30px;
     width: 100%;
 }
-
-
+.active {
+    display: block;
+}
 td {
     font: normal 16px/28px "Inter", serif;
     line-height: 38px;
@@ -520,14 +526,8 @@ td:nth-of-type(2n) {
     text-decoration: none;
     color: #717171;
     cursor: pointer;
-    text-align: center;
+    margin-left: 170px;
 }
-.select-city-container select {
-    
-}
-
-
-
 
 /* секция footer  */
 footer {

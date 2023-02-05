@@ -79,6 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ['sherrill', {city: 'Sherrill, NY', phone: '+1 315 908 0004', office: '14 WEST Noyes BLVD'}],
     ]);
 
+    const activeAddressClass = 'active';
+    const addressInfo = document.getElementById('addressInfo');
     const addressSelect = document.getElementById('addressSelect');
     addressSelect.addEventListener('change', event => {
         const value = event.target.value;
@@ -88,6 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('addressPhone').textContent = address.phone;
             document.getElementById('addressOffice').textContent = address.office;
             document.getElementById('callLink').setAttribute('href', `tel:${address.phone}`);
+            addressInfo.classList.add(activeAddressClass);
+            addressSelect.classList.add(activeAddressClass);
+        } else {
+            addressInfo.classList.remove(activeAddressClass);
+            addressSelect.classList.remove(activeAddressClass);
         }
     });
 });
