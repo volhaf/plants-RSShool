@@ -357,12 +357,13 @@ h1 {
 } */
 
 .btn-prices{
-    margin-top: 60px;
-    padding: 1px 40px 33px 41px;
+    padding: 18px 40px 33px 41px;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
+    
 }
 .accordion-button {
+    cursor: pointer;
     border: 0px;
     border-radius: 20px;
     font: normal 700 20px/20px "Inter", serif;
@@ -374,25 +375,42 @@ h1 {
     background-image: url(./images/accordion_btn.svg);
     background-repeat: no-repeat;
     background-position: center right 40px;
+    
 }
 
-.price-text-open {
-    width: 172px;
-    margin-left: 40px;
+.accordion-item.show .accordion-button {
+    background-color: #D6E7D2;
+    border-radius: none; 
+    background-image: url(./images/accordion_btn_rotate.svg);
 }
+
+
+.price-text {
+    display: none;
+    width: 172px;
+    height: 115px;
+    margin-left: 40px;
+    margin-top: -10px;
+    border-top: 0.5px solid #AEA1A1;
+}
+
+.accordion-item.show .price-text {
+    display: block;
+
+}
+
 .accordion-item {
     width: 250px;
-    height: 154px;
     background-color: #D6E7D2;
     border-radius: 20px;
     letter-spacing: 0.015em;
 }
 
+
 .accordion-text {
     font: normal 9px/10px "Inter", serif;
     letter-spacing: 0.05em;
     color: #717171;
-    margin: -9px 0px;
 }
 .cost {
     font: normal 12px/10px "Inter", serif;
@@ -406,15 +424,16 @@ h1 {
     padding: 0; 
 }
 
-.btn-order {
+.accordion-order{
+    color: #717171; 
+    font: normal 14px/20px "Inter", serif;
+    text-decoration: none;
+    display: block;
     width: 86px;
     height: 25px;
-    background: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 10px;
-    font: normal 14px/20px "Inter", serif;
-    color: #717171;
-    border: none;
-    align-items: center;
+    padding: 3px 20px 3px 20px;
 }
 
 .heading-prices-text {
