@@ -472,6 +472,12 @@ h1 {
     justify-content: space-between;
     
 }
+
+.select-city-container .address {
+    display: none;
+}
+
+
 .address {
     display: flex;
     flex-direction: column;
@@ -483,7 +489,7 @@ h1 {
 }
 
 .table_address{
-    padding: 15px 40px 5px 33px;
+    padding: 15px 0px 5px 33px;
     margin-left: -30px;
     width: 100%;
 }
@@ -515,8 +521,14 @@ td:nth-of-type(2n) {
     color: #717171;
     cursor: pointer;
     text-align: center;
-   
 }
+.select-city-container select {
+    
+}
+
+
+
+
 /* секция footer  */
 footer {
     background-color: #ffffff;
