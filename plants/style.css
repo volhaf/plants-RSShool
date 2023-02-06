@@ -136,17 +136,15 @@ h1 {
     font: normal 400 16px/20px "Inter", sans-serif;
 }
 
-.btn-1:hover,
-.btn-2:hover,
-.btn-3:hover,
-.btn-4:hover,
-.btn-5:hover {
+
+.btn-1:hover {
   border-radius: 7px;
   background-color: #e06733;
   color: white;
   border-style: solid;
   transition: 0.5s;
 }
+
 .about {
     background-color: #ffffff;
     height: 666px;
@@ -209,19 +207,24 @@ h1 {
     height: 50px;
     margin-top: 8px;
 }
-.btn-2,
-.btn-3, 
-.btn-4 {
+.button-item {
     width: 161px;
     height: 50px;
     border: solid 1px;
     border-color: #E06733;
     border-radius: 5px;
-    margin-top: 20px;
-    background-color: #EDF2EC;
+    cursor: pointer;
+    background-color: #ffffff;
     color: #E06733;
     font: normal 400 20px/26px "Inika", sans-serif;
 }
+
+.button-active {
+    background-color: #E06733;
+    color: white;
+    transition: 0.3s;
+}
+
 .blok-servis-photo {
     display: grid;
     grid-template-columns: repeat(3, 330px);
@@ -271,12 +274,19 @@ h1 {
     text-align: center;
 }
 .heading-photo {
-    font: normal bold 20px/20px "Inter", sans-serif;
+    font: bold 20px/20px "Inter", sans-serif;
     color: #E06733;
     text-align: center;
     margin: 0px;
     padding-top: 8px;
 }
+
+.blur {
+    filter: blur(3px);
+    transition-duration: .3s;
+}
+
+/* секция prices  */
 .prices {
     background-color: #ffffff;
     height: 556px;
@@ -300,19 +310,15 @@ h1 {
     margin-top: 36px;
     font: normal 700 40px/48px "Inter", sans-serif;
 }
-.btn-prices {
-    width: 332px;
-    height: 282px;
-    border: solid 1px;
-    border-color: #D9D9D9;
+
+.btn-prices{
+    padding: 18px 40px 33px 41px;
+    border: 1px solid #E3E1D5;
     border-radius: 20px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    
 }
-.price-select {
+.accordion-button {
+    cursor: pointer;
     border: 0px;
     border-radius: 20px;
     font: normal 700 20px/20px "Inter", serif;
@@ -324,6 +330,65 @@ h1 {
     background-image: url(./images/accordion_btn.svg);
     background-repeat: no-repeat;
     background-position: center right 40px;
+    
+}
+
+.accordion-item.show .accordion-button {
+    background-color: #D6E7D2;
+    border-radius: none; 
+    background-image: url(./images/accordion_btn_rotate.svg);
+}
+
+
+.price-text {
+    display: none;
+    width: 172px;
+    height: 115px;
+    margin-left: 40px;
+    margin-top: -10px;
+    border-top: 0.5px solid #AEA1A1;
+}
+
+.accordion-item.show .price-text {
+    display: block;
+
+}
+
+.accordion-item {
+    width: 250px;
+    background-color: #D6E7D2;
+    border-radius: 20px;
+    letter-spacing: 0.015em;
+}
+
+
+.accordion-text {
+    font: normal 9px/10px "Inter", serif;
+    letter-spacing: 0.05em;
+    color: #717171;
+}
+.cost {
+    font: normal 12px/10px "Inter", serif;
+    color: #010201;
+    margin: 9px 0px;
+}
+
+.cost span {
+    font: bold 15px/20px "Inter", serif;
+    color: #E06733;
+    padding: 0; 
+}
+
+.accordion-order{
+    color: #717171; 
+    font: normal 14px/20px "Inter", serif;
+    text-decoration: none;
+    display: block;
+    width: 86px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 3px 20px 3px 20px;
 }
 
 .heading-prices-text {
@@ -331,22 +396,17 @@ h1 {
     color: #000;
     text-align: end;
 }
-.btn-5 {
-    width: 162px;
-    height: 50px;
-    border: solid 1px;
-    border-color: #E06733;
-    color:#E06733 ;
-    border-radius: 5px;
-    background-color: #ffffff;
-    font: normal 400 20px/26px "Inika", sans-serif;
-}
 .blok-text-prices{
     display: flex;
     flex-direction: column;
     gap: 12px;
     align-items: flex-end;
 }
+
+
+
+/* секция contacts  */
+
 .contacts {
     margin-top:5px;
 }
@@ -380,6 +440,68 @@ h1 {
     background-repeat: no-repeat;
     background-position: center right 35px;
 }
+.select-city.active {
+    background-color: #C1E698;
+    box-shadow: none;
+    background-image: url(./images/drop_btn.svg);
+}
+.select-city-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+/* .select-city-container .address {
+    display: none;
+} */
+
+.address {
+    /* display: flex;
+    flex-direction: column; */
+    display: none;
+    width: 448px;
+    padding: 25px 33px 28px 30px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-bottom: 80px;
+
+}
+
+.table_address{
+    padding: 15px 0px 5px 33px;
+    margin-left: -30px;
+    width: 100%;
+}
+.active {
+    display: block;
+}
+td {
+    font: normal 16px/28px "Inter", serif;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+}
+td:nth-of-type(2n-1) {
+    color: #000000;
+    width: 129px;
+}
+td:nth-of-type(2n) {
+    color: #717171;
+}
+
+.call {
+    text-decoration: none;
+    color: #717171;
+    cursor: pointer;
+    margin-left: 140px;
+    font: normal 700 10px/13px "Inika", sans-serif;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    padding: 6px 40px;
+
+}
+
+/* секция footer  */
 footer {
     background-color: #ffffff;
 }
@@ -623,7 +745,7 @@ footer {
     .select-city {
         order: 2;
         margin-top: 0px;
-        margin-top: -190px; /*подумать*/
+        margin-top: -190px; 
     }
     .contacts-photo {
         order: 3;
@@ -672,7 +794,7 @@ footer {
         list-style: none;
         gap: 20px;
         align-items: center;
-        margin-left: -40px; /* подумать*/
+        margin-left: -40px; 
     }
     }
 
@@ -940,7 +1062,7 @@ footer {
     .prices-leafs {
         display: none;
     }
-    .btn-5 {
+    .button-contacts {
         width: 121px;
         height: 35px;
         font: normal 400 15px/20px "Inika", sans-serif;
