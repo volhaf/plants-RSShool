@@ -136,17 +136,6 @@ h1 {
     font: normal 400 16px/20px "Inter", sans-serif;
 }
 
-/* .btn-1:hover,
-.btn-2:hover,
-.btn-3:hover,
-.btn-4:hover,
-.btn-5:hover {
-  border-radius: 7px;
-  background-color: #e06733;
-  color: white;
-  border-style: solid;
-  transition: 0.5s;
-} */
 
 .btn-1:hover {
   border-radius: 7px;
@@ -321,40 +310,6 @@ h1 {
     margin-top: 36px;
     font: normal 700 40px/48px "Inter", sans-serif;
 }
-/* .btn-prices {
-    width: 332px;
-    height: 282px;
-    border: solid 1px;
-    border-color: #D9D9D9;
-    border-radius: 20px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.price-select {
-    border: 0px;
-    border-radius: 20px;
-    font: normal 700 20px/20px "Inter", serif;
-    padding: 16px 40px;
-    text-align: left;
-    width: 250px;
-    appearance: none;
-    background-color: #edf2ec;
-    background-image: url(./images/accordion_btn.svg);
-    background-repeat: no-repeat;
-    background-position: center right 40px;
-} */
-
-/* .btn-prices {
-    width: 332px;
-    height: 282px;
-    border: solid 1px;
-    border-color: #D9D9D9;
-    border-radius: 20px;
-    background-color: #ffffff;
-} */
 
 .btn-prices{
     padding: 18px 40px 33px 41px;
@@ -488,6 +443,7 @@ h1 {
 .select-city.active {
     background-color: #C1E698;
     box-shadow: none;
+    background-image: url(./images/drop_btn.svg);
 }
 .select-city-container {
     display: flex;
@@ -532,20 +488,17 @@ td:nth-of-type(2n-1) {
 td:nth-of-type(2n) {
     color: #717171;
 }
-.btn_call {
-    width: 122px;
-    height: 26px;
-    border: 1px solid #E06733;
-    border-radius: 5px;
-    font: normal 700 10px/13px "Inika", sans-serif;
-    align-self: center;
-    margin-top: 10px;
-}
+
 .call {
     text-decoration: none;
     color: #717171;
     cursor: pointer;
-    margin-left: 170px;
+    margin-left: 140px;
+    font: normal 700 10px/13px "Inika", sans-serif;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    padding: 6px 40px;
+
 }
 
 /* секция footer  */
@@ -792,7 +745,7 @@ footer {
     .select-city {
         order: 2;
         margin-top: 0px;
-        margin-top: -190px; /*подумать*/
+        margin-top: -190px; 
     }
     .contacts-photo {
         order: 3;
@@ -841,7 +794,7 @@ footer {
         list-style: none;
         gap: 20px;
         align-items: center;
-        margin-left: -40px; /* подумать*/
+        margin-left: -40px; 
     }
     }
 
