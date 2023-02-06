@@ -80,49 +80,49 @@
                         <h2 class="heading-servis">Service and our projects</h2>
                     </div>
                     <div class="btn-servis">
-                        <button class="btn-2">Gardens</button>
-                        <button class="btn-3">Lawn</button>
-                        <button class="btn-4">Planting</button>
+                        <button class="button-item" data-service="garden">Gardens</button>
+                        <button class="button-item" data-service="lawn">Lawn</button>
+                        <button class="button-item" data-service="planting">Planting</button>
                     </div>
                 </div>
 
                 <div class="blok-servis-photo">
-                    <div class="item-servis women1">
+                    <div class="item-servis" data-service="garden">
                         <div class="servis-img"></div>
                         <div class="card-text">
                             <h3 class="heading-photo">Garden care</h3>
                             <p>Lorem Ipsum has been the industry</p>
                         </div>
                     </div>
-                    <div class="item-servis lemon">
+                    <div class="item-servis" data-service="planting">
                         <div class="servis-img"></div>
                         <div class="card-text">
                             <h3 class="heading-photo">Planting</h3>
                             <p>Lorem Ipsum has been the industry</p>
                           </div>
                     </div>
-                    <div class="item-servis spray">
+                    <div class="item-servis" data-service="lawn">
                         <div class="servis-img"></div>
                         <div class="card-text">
                             <h3 class="heading-photo">Lawn care</h3>
                             <p>Lorem Ipsum has been the industry</p>
                           </div>
                     </div>
-                    <div class="item-servis women2">
+                    <div class="item-servis" data-service="planting">
                         <div class="servis-img"></div>
                         <div class="card-text">
                             <h3 class="heading-photo">Planting</h3>
                             <p>Lorem Ipsum has been the industry</p>
                           </div>
                     </div>
-                    <div class="item-servis flowerpot">
+                    <div class="item-servis" data-service="garden">
                         <div class="servis-img"></div>
                         <div class="card-text">
                             <h3 class="heading-photo">Garden care</h3>
                             <p>Lorem Ipsum has been the industry</p>
                           </div>
                     </div>
-                    <div class="item-servis cactus">
+                    <div class="item-servis" data-service="planting">
                         <div class="servis-img"></div>
                         <div class="card-text">
                             <h3 class="heading-photo">Planting</h3>
@@ -136,24 +136,44 @@
             <div class="prices-wrapper conteiner">
                 <div class="blok-prices">
                     <h2 class="heading-prices">Prices</h2>
-                    <div class="prices-item">
-                        <div class="btn-prices">
-                            <select class="price-select">
-                                <option class="option-prices">Basics</option>
-                            </select>
-                            <select class="price-select">
-                                <option class="option-prices">Standard</option>
-                            </select>
-                            <select class="price-select">
-                                <option class="option-prices">Pro care</option>
-                            </select>
+                    <div id="prices" class="btn-prices accordion">
+                        <div class="accordion-item">
+                            <h3 class="prices-list">
+                                <button class="accordion-button" type="button">Basics</button>
+                            </h3>
+                            <div class="price-text">
+                                <p class="accordion-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                <p class="cost"><span>$15</span>"  / per hour"</p>
+                                <a class="accordion-order" href="#contacts-anchor">Order</a>
+                        
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="prices-list">
+                                <button class="accordion-button" type="button">Standard</button>
+                            </h3>
+                            <div class="price-text">
+                                <p class="accordion-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                <p class="cost"><span>$25</span>"  / per hour"</p>
+                                <a class="accordion-order" href="#contacts-anchor">Order</a>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="prices-list">
+                                <button class="accordion-button" type="button">Pro care</button>
+                            </h3>
+                            <div class="price-text">
+                                <p class= "accordion-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                <p class="cost"><span>$35</span>"  / per hour"</p>
+                                <a class="accordion-order" href="#contacts-anchor">Order</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="blok-text-prices">
-                        <h2 class="heading-prices-text"> Our best <span class="green">gardeners</span> are ready to help you</h2>
-                        <button class="btn-5">Contact us</button>
-                        <img src="./images/leafs2.png" alt="leafs2" class="prices-leafs">
+                    <h2 class="heading-prices-text"> Our best <span class="green">gardeners</span> are ready to help you</h2>
+                    <button class="button-item button-contacts ">Contact us</button>
+                    <img src="./images/leafs2.png" alt="leafs2" class="prices-leafs">
                 </div>
             </div>
         </section>
@@ -163,9 +183,33 @@
                     <img src="./images/contact_woman.png" alt="contact-woman">
                 </div>
                     <h2 class="heading-contacts">Contact us</h2>
-                <select class="select-city">
-                    <option class="option-city">City</option>
-                </select>
+                    <div class="select-city-container">
+                        <select id="addressSelect" class="select-city">
+                            <option selected>City</option>
+                            <option value="canandaigua">Canandaigua, NY</option>
+                            <option value="newyork">New York City</option>
+                            <option value="yonkers">Yonkers, NY</option>
+                            <option value="sherrill">Sherrill, NY</option>
+                            </option>
+                        </select>
+                        <div id="addressInfo" class="address">
+                            <table class="table_address">
+                                <tr>
+                                    <td>City:</td>
+                                    <td id="addressCity"></td>
+                                </tr>
+                                <tr>
+                                    <td>Phone:</td>
+                                    <td id="addressPhone"></td>
+                                </tr>
+                                <tr>
+                                    <td>Office adress:</td>
+                                    <td id="addressOffice"></td>
+                                </tr>
+                            </table>
+                                <a id="callLink" class="call" href="">Call us</a>
+                        </div>
+                    </div>
             </div>
         </section>
     </main>
